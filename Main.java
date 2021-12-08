@@ -24,12 +24,12 @@ public class Main {
         System.out.println("Sumber Yodium pilihan anda adalah " + Yodium.getYodiumRingan() + "\n");
 
         // Adapter Pattern
-        Berat susu = new Mineral();
+        Berat mineral = new Mineral();
 
         System.out.print(Yodium.getYodiumRingan() + " adalah ");
         Yodium.ringan();
 
-        Ringan RinganAdapter = new AdapterPattern(susu);
+        Ringan RinganAdapter = new AdapterPattern(mineral);
         System.out.print(Yodium.getYodiumRingan() + " sekarang sudah menjadi ");
         RinganAdapter.ringan();
     }
